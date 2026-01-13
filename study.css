@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e0f7fa, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.game-container {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    width: 500px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+h1 { color: #004d40; }
+
+.subject-selection button,
+#restart-btn {
+    padding: 12px 20px;
+    margin: 8px;
+    border: none;
+    border-radius: 8px;
+    background-color: #00796b;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    transition: 0.3s;
+}
+
+.subject-selection button:hover,
+#restart-btn:hover {
+    background-color: #004d40;
+    transform: scale(1.05);
+}
+
+.score { font-weight: bold; margin-bottom: 15px; color: #00695c; }
+
+.progress-bar {
+    height: 12px;
+    background: #cfd8dc;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+.progress {
+    height: 100%;
+    width: 0;
+    background: #00796b;
+    border-radius: 6px;
+    transition: width 0.3s;
+}
+
+.question {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.answers button {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 8px;
+    background-color: #009688;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    transition: 0.3s;
+}
+
+.answers button:hover {
+    background-color: #00796b;
+    transform: scale(1.03);
+}
+
+.answers button.correct { background-color: #2e7d32 !important; }
+.answers button.wrong { background-color: #c62828 !important; }
+
+.result {
+    margin-top: 15px;
+    font-weight: bold;
+    min-height: 28px;
+}
